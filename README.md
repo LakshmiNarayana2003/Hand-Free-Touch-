@@ -1,17 +1,21 @@
-# Hand-Free-Touch-
-Hand-Free Touch uses computer vision to enable touch-free interaction with digital content. By tracking finger movements with OpenCV and Mediapipe, it detects pinch gestures to simulate scrolling actions. Users can scroll through content like YouTube Shorts by moving their fingers, providing an intuitive and accessible control method.
+# Gesture-Based Scrolling with Hand Tracking
 
-Features
-Gesture-Based Interaction: Detects pinch gestures between the index finger and thumb to control scrolling actions.
-Real-Time Scrolling: Allows users to scroll through content, such as YouTube Shorts, by moving their fingers up or down.
-High Responsiveness: Ensures accurate and smooth gesture detection for a seamless user experience.
+This project implements a gesture-controlled scrolling application using OpenCV, MediaPipe, and PyAutoGUI. The program opens YouTube Shorts in a web browser and allows users to scroll up and down using hand gestures captured via webcam. Specifically, the application detects the following gestures:
 
-Technologies Used
-OpenCV: Utilized for capturing and processing video frames.
-Mediapipe: Provides hand landmark detection and tracking capabilities.
-Pyautogui: Simulates scrolling actions in the browser based on detected gestures.
+- **Scroll Up**: Touch your thumb and index finger together.
+- **Scroll Down**: Touch your thumb and middle finger together.
 
-Usage
-Run the Application: Start the Python script to initiate video capture and hand tracking.
-Gesture Control: Position your hand in front of the camera. The application will track your fingers and detect pinch gestures.
-Scroll Action: By pinching and moving your fingers, you can scroll through content on your screen.
+This hands-free interaction is achieved using real-time hand landmark detection and simple Python automation.
+
+## Features
+
+- **Gesture Recognition**: Detects specific finger gestures using MediaPipe’s hand tracking.
+- **Automatic Scrolling**: Initiates scroll actions on detecting the appropriate gesture.
+- **Real-Time Video Feed**: Displays the webcam feed with annotated hand landmarks for live feedback.
+
+## Requirements
+
+Make sure to install the following dependencies:
+
+```bash
+pip install opencv-python mediapipe pyautogui
